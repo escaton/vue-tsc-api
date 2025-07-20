@@ -6,11 +6,7 @@ A (very) simple wrapper that exposes vue-tsc's programmatic API for use in build
 
 The vue-tsc maintainers have intentionally kept vue-tsc as a CLI-only tool to maintain its single purpose and avoid confusion. However, some build tools and TypeScript checkers (like [fork-ts-checker-webpack-plugin](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin), [ts-checker-rspack-plugin](https://github.com/rspack-contrib/ts-checker-rspack-plugin)) need programmatic access to vue-tsc's TypeScript compiler to work with Vue SFC support.
 
-While you could create this one-line re-export yourself in your project, this package exists purely for **ergonomics**: instead of maintaining a local file with 
-```js
-require('vue-tsc').run(require.resolve('typescript/lib/typescript'))
-```
-in your repository, you can simply use `require.resolve('vue-tsc-api')` wherever you need it.
+While you could create this one-line re-export yourself in your project, this package exists purely for **ergonomics**: instead of maintaining a local file in your repository, you can simply use `require('vue-tsc-api')` or `require.resolve('vue-tsc-api')` wherever you need it.
 
 **TL;DR**: This package saves you from copy-pasting the same one-liner into every project that needs vue-tsc programmatically.
 
