@@ -4,9 +4,9 @@ A (very) simple wrapper that exposes vue-tsc's programmatic API for use in build
 
 ## Why does this package exist?
 
-The vue-tsc maintainers have intentionally kept vue-tsc as a CLI-only tool to maintain its single purpose and avoid confusion. However, some build tools and TypeScript checkers (like [fork-ts-checker-webpack-plugin](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin), [ts-checker-rspack-plugin](https://github.com/rspack-contrib/ts-checker-rspack-plugin)) need programmatic access to vue-tsc's TypeScript compiler to work with Vue SFC support.
+The vue-tsc maintainers have intentionally kept vue-tsc as a CLI-only tool to maintain its single purpose and avoid confusion. However, some build tools and TypeScript checkers (like [fork-ts-checker-webpack-plugin](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin), [ts-checker-rspack-plugin](https://github.com/rspack-contrib/ts-checker-rspack-plugin)) need programmatic access to vue-tsc's TypeScript compiler to work with Vue SFCs.
 
-While you could create this one-line re-export yourself in your project, this package exists purely for **ergonomics**: instead of maintaining a local file in your repository, you can simply use `require('@esctn/vue-tsc-api')` or `require.resolve('@esctn/vue-tsc-api')` wherever you need it.
+While you could create this one-line re-export yourself and store in your project, this package exists purely for **ergonomics**: you can simply use `require('@esctn/vue-tsc-api')` wherever you need it.
 
 ## Installation
 
@@ -15,9 +15,12 @@ npm install typescript vue-tsc @esctn/vue-tsc-api
 ```
 The `typescript@>=5.0.0` and `vue-tsc@~3.0.3` are peer dependencies.
 
+If you think that adding a new package for this is too much, I feel you!
+Just copy it into your local file, and use `require.resolve` on it.
+
 ## Usage
 
-The package exports the same api as `typescript/lib/typescript` but with vue-tsc patches to support Vue SFC.
+The package exports the same api as `typescript/lib/typescript` but with `vue-tsc` patches to support Vue SFC.
 
 ### Example with webpack ts-checker
 
@@ -51,7 +54,7 @@ ISC
 
 ## Contributing
 
-Issues and pull requests are welcome on [GitHub](https://github.com/esctn/vue-tsc-api).
+Issues and pull requests are welcome on [GitHub](https://github.com/escaton/vue-tsc-api).
 
 ## Related
 
