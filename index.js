@@ -1,0 +1,1 @@
+module.exports = require('vue-tsc').run(require.resolve('typescript/lib/typescript'))

@@ -1,0 +1,28 @@
+{
+  "name": "vue-tsc-api",
+  "version": "1.0.0",
+  "description": "Expose vue-tsc api for programmatic usage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escaton/vue-tsc-api.git"
+  },
+  "keywords": [
+    "vue",
+    "typescript",
+    "vue-tsc"
+  ],
+  "author": "Egor Blinov (https://github.com/escaton)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/escaton/vue-tsc-api/issues"
+  },
+  "homepage": "https://github.com/escaton/vue-tsc-api#readme",
+  "peerDependencies": {
+    "vue-tsc": "^3.0.3",
+    "typescript": ">=5.0.0"
+  }
+}
