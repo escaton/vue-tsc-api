@@ -1,6 +1,6 @@
 {
   "name": "@esctn/vue-tsc-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Expose vue-tsc api for programmatic usage",
   "main": "index.js",
   "scripts": {
