@@ -8,8 +8,6 @@ The vue-tsc maintainers have intentionally kept vue-tsc as a CLI-only tool to ma
 
 While you could create this one-line re-export yourself in your project, this package exists purely for **ergonomics**: instead of maintaining a local file in your repository, you can simply use `require('vue-tsc-api')` or `require.resolve('vue-tsc-api')` wherever you need it.
 
-**TL;DR**: This package saves you from copy-pasting the same one-liner into every project that needs vue-tsc programmatically.
-
 ## Installation
 
 ```bash
