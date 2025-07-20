@@ -55,5 +55,6 @@ Issues and pull requests are welcome on [GitHub](https://github.com/escaton/vue-
 
 ## Related
 
-- [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/vue-tsc) - Vue 3 command line Type-Checking tool
+- [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) - Vue 3 command line Type-Checking tool
+- [Volar.js](https://github.com/volarjs/volar.js/tree/master/packages/typescript) - The infrastructure behind `vue-tsc`
 - [TypeScript](https://www.typescriptlang.org/) - The TypeScript language and compiler
