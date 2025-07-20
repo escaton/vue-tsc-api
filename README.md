@@ -1,22 +1,21 @@
-# vue-tsc-api
+# @esctn/vue-tsc-api
 
 A (very) simple wrapper that exposes vue-tsc's programmatic API for use in build tools and other TypeScript-related tooling.
 
 ## Why does this package exist?
 
-The vue-tsc maintainers have intentionally kept vue-tsc as a CLI-only tool to maintain its single purpose and avoid confusion. However, some build tools and TypeScript checkers (like [fork-ts-checker-webpack-plugin](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin), [ts-checker-rspack-plugin](https://github.com/rspack-contrib/ts-checker-rspack-plugin)) need programmatic access to vue-tsc's TypeScript compiler to work with Vue SFCs.
+The vue-tsc maintainers have [intentionally](https://github.com/vuejs/language-tools/pull/5528#issuecomment-3092559277) kept vue-tsc as a CLI-only tool to maintain its single purpose and avoid confusion. However, some build tools and TypeScript checkers (like [fork-ts-checker-webpack-plugin](https://github.com/TypeStrong/fork-ts-checker-webpack-plugin), [ts-checker-rspack-plugin](https://github.com/rspack-contrib/ts-checker-rspack-plugin)) need programmatic access to vue-tsc's TypeScript compiler to work with Vue SFCs.
 
-While you could create this one-line re-export yourself and store in your project, this package exists purely for **ergonomics**: you can simply use `require('@esctn/vue-tsc-api')` wherever you need it.
+The content of this package is literally one line, and if you think that installing an npm package for it is too much, I feel you!
+
+I published it purely for ergonomics — feel free to just copy the file in your project, and use `require.resolve('path/to/your-wrapper.js')`.
 
 ## Installation
 
 ```bash
-npm install typescript vue-tsc @esctn/vue-tsc-api
+npm install @esctn/vue-tsc-api
 ```
 The `typescript@>=5.0.0` and `vue-tsc@~3.0.3` are peer dependencies.
-
-If you think that adding a new package for this is too much, I feel you!
-Just copy it into your local file, and use `require.resolve` on it.
 
 ## Usage
 
