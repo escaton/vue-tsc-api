@@ -30,7 +30,7 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin({
       typescript: {
         // Use vue-tsc-api instead of regular TypeScript
-        typescriptPath: require.resolve('vue-tsc-api')
+        typescriptPath: 'vue-tsc-api'
       }
     })
   ]
